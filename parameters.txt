@@ -1,0 +1,12 @@
+FLTMODE_CH	7
+RC5_OPTION	153
+Q_enable        1
+Q_FRAME_TYPE	16	
+Q_TAILSIT_ENABLE	2		
+Q_TAILSIT_MOTMX	15		
+Q_TAILSIT_ANGLE	70	deg	5 80	This is the pitch angle at which tailsitter aircraft will change from VTOL control to fixed wing control.
+
+Q_RTL_MODE	1		0:Disabled 1:Enabled 2:VTOL approach 3:QRTL Always 	If this is set to 1 then an RTL will change to QRTL when within RTL_RADIUS meters of the RTL destination, VTOL approach: vehicle will RTL at RTL alt and circle with a radius of Q_FW_LND_APR_RAD down to Q_RTL_ALT and then transition into the wind and QRTL, see 'AUTO VTOL Landing', QRTL Always: do a QRTL instead of RTL
+
+3 1 4 2 mot
+Q_M_PWM_TYPE	4		0:Normal 1:OneShot 2:OneShot125 3:Brushed 4:DShot150 5:DShot300 6:DShot600 7:DShot1200 8:PWMRange 	This selects the output PWM type, allowing for normal PWM continuous output, OneShot, brushed or DShot motor output
